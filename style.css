@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'poppinns', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1 {
+    font-family: "YourFont1", serif;
+  }
+  
+  .sub-title {
+    font-family: "YourFont2", sans-serif; 
+  }
+body{
+    background: #0a0a0a7e;
+    color: #0d0c0b;
+}
+#header{
+    width: 100%;
+    height: 200vh;
+    background-image: url(images/portfolio1.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.white-text {
+    color: white;
+.header-text div span{
+    color: aliceblue;}
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 200px;
+}
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    margin: 10px 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration:none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background:black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+nav ul li a:hover ::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 30%;
+    font-size: 40px;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 30px;
+    color: rgb(7, 7, 7);
+}
+.header-texts h1 span{
+    color: rgb(160, 105, 95);
+}
+/*-------about----------*/
+#about{
+    padding: 80px 0;
+    color: black;     
+}
+.row{ 
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 40%;
+
+}
+.about-col-1 img{
+    width: 75%;
+    border-radius: 20px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 500;
+    color:black(0, 0, 0, 0.146);
+}
+/*------------skills------*/
+#skills{
+    padding: 30px 0;   
+}
+.skills-list li{
+    display:inline-block;
+   list-style: none;
+    grid-gap: 40pxd;
+    margin-top:10px 10px;
+}
+.skills-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: black;
+    display:inline-block;
+    transition: 0.5s;
+
+}
+.skills-list div i :hover{
+    background: #3700ff;
+    transform: translate(-10px);
+}
+nav ol li{
+    list-style: lower-roman;
+    margin: 10px 10px;
+    color: black;
+}
+/*---------------projects--------------*/
+#projects{
+padding: 30px;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,mimnmax(250px,1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+.project-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition:0.5s,transform 0.5s;
+
+}
+.project-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+
+}
+.project-list div h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.project-list div a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.project-list div:hover{
+    background: #3700ff;
+    transform: translateY(-10px);
+}
+/*-------resume--------- --*/
+.sub-title {
+    color: #1b1c19;
+}
+#resume{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,mimnmax(250px,1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+.work{
+    position: relative;
+    overflow: hidden;
+}
+/*---------contact--------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left p i{
+    color: aqua;
+    margin-right: 15px;
+    font-size: 30px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+    color: aqua;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: brown;
+    transform:translateY(-10px) ;
+}
+.btn.btn2{
+    display: inline-block;
+    background:wheat;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin:15px 0 ;
+    color: #fff;
+    font-size: 18px 6px;
+    border-radius:10px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top:  20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: rgb(57, 60, 60);
+    font-weight: 400;
+    margin-top: 20px;
+
+}
+/*--------------css for small screen-------*/
+nav .fa-solid{
+    display: none;
+}
+
+.header-text{
+    margin-top: 100px;
+    font-size: 16px;
+
+}
+.header-text h1{
+    font-size: 50px;
+}
+#span{
+    color: blue;
+    margin-top: -10px;
+    display: block;
+}

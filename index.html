@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/aba703022c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="fonts/yourfont1.woff">
+<link rel="stylesheet" type="text/css" href="fonts/yourfont2.woff">
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg"class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,i'm <span> Collins  Munene </span><br>from Nairobi,Kenya </h1>
+            </div>
+        </div>
+    </div>
+ <!--------about-------->
+<div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/portfolio 2.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>
+            Hello my name is Collins Munene and am 20-years old.<br>
+            I study Computer Science at Africa Nazarene University<br>
+            and my goal is to become the best at it.
+          </p>
+          <select id="selector" onchange="toggleElement()">
+            <option value="background">Background</option>
+            <option value="education">Education</option>
+            <option value="interests">Interests</option>
+          </select>
+          <div id="background" class="element">
+            <ul>
+              <li>I was born on 1st March 2004</li>
+              <li> am born in a family of 4</li>
+              <li>I am 20 years old</li>
+              <li> have one sibling(a brother) He is 25 years old.</li>
+              <li>I am a christian.</li>
+              <li>I have two parents (Father & Mother)</li>
+            </ul>
+          </div>
+          <div id="education" class="element" style="display:none;">
+            <ul>
+              <li><span>2023 - current</span><br>Computer Science at Africa Nazarene University</li>
+              <li><span>2019 - 2022</span><br>high school education at Utumishi Boys Academy</li>
+              <li><span>2007 - 2018</span><br>Primary education at PCEA Kathigiri Boarding Primary School</li>
+            </ul>
+          </div>
+          <div id="interests" class="element" style="display:none;">
+            <ul>
+              <li>
+                My main interest is to excel in my field and acquire expertise in cybersecurity.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Show the "Background" element by default
+    document.getElementById("background").style.display = "block";
+  
+    function toggleElement() {
+      var selector = document.getElementById("selector");
+      var selectedElementId = selector.value;
+  
+      // Hide all elements
+      var elements = document.getElementsByClassName("element");
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = "none";
+      }
+  
+      // Show selected element
+      document.getElementById(selectedElementId).style.display = "block";
+    }
+  </script>
+    <!---------skills----->
+    <div id="skills"></div>
+    <div class="container">
+        <h1 class="sub-title">My skills</h1>
+        <div class="skills-list">
+            <div>
+                <h2>Skills i can do</h2>
+                    I can code using five different programming languages:<br>
+                    <nav>
+                    <ol>
+                      <i class="fa-brands fa-html5"></i>
+                        <li>Html</li>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <li>Css</li>
+                        <i class="fa-brands fa-js"></i>
+                        <li>Javascript</li>
+                        <i class="fa-brands fa-js"></i>
+                        <li>Java</li>
+                        <i class="fa-brands fa-python"></i>
+                        <li>Python</li>
+                    </ol>
+                </nav>
+            </div>
+
+        </div>
+        <!------projects--------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects I am working on</h1>
+        <div class="project-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2><b>Web Design</b></h2>
+            <p>
+                I am currently working on web designing .
+            </p>
+            <a href="#">Learn more</a>
+        </div>
+        </div>
+    </div>
+</div>
+<!---------resumee-------- -->
+<div id="resume">
+
+  <div class="container">
+    <h1 class="sub-title">My resume</h1>
+    <a href="images/My Resume.pdf.pdf"download class="btn btn2">Download Resume</a>
+    <div class="copyright">
+    <div class="work-list">
+      <div class="work">
+    </div> 
+  </div>
+</div>
+    </div>
+    <!----------contact-------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fa-regular fa-paper-plane"></i></p>collinsgitari1@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0759867927</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/moonene._/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+           <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" btn>submit</button>
+           </form>
+           <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+      <p>copyright @ Collins</p>
+    </div>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontents.classList.remove("actve-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+        </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwenyHoRJ0SWhOooBWrp-P_Fe12SJ0qgD-u3u1RLULLWazQAvv12W1c474s6rnUZQBi/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML ="Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML =""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
